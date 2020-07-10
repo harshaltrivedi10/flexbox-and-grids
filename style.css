@@ -1,30 +1,64 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
-}
-@media all and (min-width: 700px) {
-  .items {
-    height: 10%;
-    width: 20%;
-    border: 1px solid black;
-    padding: 2% 2%;
-  }
+  height: 100%;
 }
 
-@media all and (max-width: 699px) {
+@media all and (min-width: 721px) {
   .items {
-    height: 10%;
-    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 40%;
+    width: 23%;
     border: 1px solid red;
-    padding: 2% 2%;
+    margin-left: 1%;
+    /* padding: 2% 2%; */
+  }
+  .item {
+    height: 90%;
+    width: 20%;
+    border: 1px solid red;
+    margin-left: 1%;
   }
 }
 
-@media all and (max-width: 500px) {
+@media all and (min-width: 361px) and (max-width: 720px) {
   .items {
-    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 40%;
+    width: 45%;
+    border: 1px solid black;
+    margin-left: 1%;
+    /* padding: 2% 2%; */
+  }
+  .item {
+    height: 40%;
+    width: 45%;
+    border: 1px solid black;
+    margin: 1% 1%;
+  }
+}
+
+@media all and (max-width: 361px) {
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    height: 40%;
     width: 90%;
     border: 1px solid blue;
-    padding: 2% 2%;
+    margin: 1% 1%;
+    /* padding: 2% 2%; */
+  }
+  .item {
+    height: 20%;
+    width: 90%;
+    border: 1px solid black;
+    margin-left: 1% 1%;
   }
 }
